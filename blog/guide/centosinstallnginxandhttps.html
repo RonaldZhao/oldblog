@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RonaldZhao的博客 | 阿里云ECS服务器安装nginx1.12.2、配置博客目录并开启https</title>
+    <meta name="description" content="Stay hungary.Stay foolish. —— Steve Jobs">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/11.styles.45daf97d.css" as="style"><link rel="preload" href="/assets/js/app.5aa3ec1f.js" as="script"><link rel="preload" href="/assets/js/4.1b6aa496.js" as="script"><link rel="prefetch" href="/assets/js/0.c0d102a1.js"><link rel="prefetch" href="/assets/js/1.443209b1.js"><link rel="prefetch" href="/assets/js/2.4932aec7.js"><link rel="prefetch" href="/assets/js/3.661e741d.js"><link rel="prefetch" href="/assets/js/5.f43c30f8.js"><link rel="prefetch" href="/assets/js/6.573d3a1d.js"><link rel="prefetch" href="/assets/js/7.c5ba576c.js"><link rel="prefetch" href="/assets/js/8.66ee271b.js"><link rel="prefetch" href="/assets/js/9.4a76cf44.js"><link rel="prefetch" href="/assets/js/10.bbf5e6f5.js">
+    <link rel="stylesheet" href="/assets/css/11.styles.45daf97d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      RonaldZhao的博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/love/" class="nav-link">love</a></div><a href="https://github.com/RonaldZhao" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/love/" class="nav-link">love</a></div><a href="https://github.com/RonaldZhao" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Python3</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Java</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Git</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>教程/指南</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/blog/guide/" class="sidebar-link">小白的翻墙之路</a></li><li><a href="/blog/guide/centosinstallnginxandhttps.html" class="active sidebar-link">阿里云ECS服务器安装nginx1.12.2、配置博客目录并开启https</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>开发工具</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>刷题集</span><span class="arrow right"></span></p><!----></div></li><li><a href="/about/" class="sidebar-link">关于</a></li></ul></div><div class="page"><div class="content"><h1 id="阿里云ecs服务器安装nginx1-12-2、配置博客目录并开启https"><a href="#阿里云ecs服务器安装nginx1-12-2、配置博客目录并开启https" aria-hidden="true" class="header-anchor">#</a> 阿里云ECS服务器安装nginx1.12.2、配置博客目录并开启https</h1><p>目录</p><p></p><div class="table-of-contents"><ul><li><a href="#服务器系统">服务器系统</a></li><li><a href="#安装">安装</a></li><li><a href="#配置">配置</a></li><li><a href="#开启https">开启https</a></li><li><a href="#重启nginx">重启nginx</a></li></ul></div><p></p><h2 id="服务器系统"><a href="#服务器系统" aria-hidden="true" class="header-anchor">#</a> 服务器系统</h2><p>CentOS 7.4</p><h2 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h2><p>下面的命令都是在root权限下执行，非root需要使用sudo。如：<code>sudo yum</code></p><pre class="language-text"><code># vim /etc/yum.repos.d/nginx.repo # 进入后先按小写 **a** ，然后粘贴如下内容，然后按 **esc** ，然后输入 **:wq** 回车退出。
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/7/$basearch/
+gpgcheck=0
+enabled=1
+# yum install nginx
+...
+..
+.
+# systemctl start nginx
+# systemctl status nginx # 可见输出的第二行如下
+● nginx.service - nginx - high performance web server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)
+   Active: **active (running)** since Wed 2017-11-01 16:23:32 CST; 14s ago
+     Docs: http://nginx.org/en/docs/
+  Process: 10379 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf (code=exited, status=0/SUCCESS)
+  Process: 10378 ExecStartPre=/usr/sbin/nginx -t -c /etc/nginx/nginx.conf (code=exited, status=0/SUCCESS)
+ Main PID: 10382 (nginx)
+   CGroup: /system.slice/nginx.service
+           ├─10382 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.conf
+           └─10383 nginx: worker process
+Nov 01 16:23:32 jesuszhao systemd[1]: Starting nginx - high performance web server...
+Nov 01 16:23:32 jesuszhao nginx[10378]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+Nov 01 16:23:32 jesuszhao nginx[10378]: nginx: configuration file /etc/nginx/nginx.conf test is successful
+Nov 01 16:23:32 jesuszhao systemd[1]: Failed to read PID from file /var/run/nginx.pid: Invalid argument
+Nov 01 16:23:32 jesuszhao systemd[1]: Started nginx - high performance web server.
+</code></pre><h2 id="配置"><a href="#配置" aria-hidden="true" class="header-anchor">#</a> 配置</h2><p>问题一：nginx未设置开机启动，所以如果服务器重启就需要手动启动nginx。</p><p>解决方法： 执行<code># systemctl enable nginx.service</code>，然后重启服务器即可。</p><p>问题二：nginx还未与博客目录、域名绑定 。</p><p>解决方法：</p><p>首先你要决定把博客目录放在哪里，然后在那里新建一个文件夹并把博客的所有文件上传到那个文件夹下，比如：<code>/var/www/blog</code>目录，然后配置<code>nginx</code>：</p><pre class="language-text"><code># cd /etc/nginx/conf.d/
+# vim default.conf # 最好先备份：cp default.conf default.conf.bak
+</code></pre><p>打开default.conf文件后修改server的花括号之间的以下几项：</p><ol><li><strong>server_name</strong>：改成你的域名，如：<code>ronaldzhao.top</code>（不要带http或https前缀）</li><li><strong>root</strong>：改成你的博客目录的路径，如：<code>/var/www/blog</code></li><li><strong>index</strong>: 改成你的博客文件的首页文件名，如：<code>index.html</code></li></ol><h2 id="开启https"><a href="#开启https" aria-hidden="true" class="header-anchor">#</a> 开启https</h2><ol><li><p>首先去<a href="https://common-buy.aliyun.com/?spm=5176.2020520163.cas.1.7f850e31atqmMO&commodityCode=cas#/buy" target="_blank" rel="noopener noreferrer">阿里云</a>、<a href="https://console.cloud.tencent.com/ssl/apply" target="_blank" rel="noopener noreferrer">腾讯云</a>、<a href="https://portal.qiniu.com/certificate/apply" target="_blank" rel="noopener noreferrer">七牛云</a>等申请个免费的https证书。</p></li><li><p>待证书发下来后把nginx版的下载下来，然后登录ECS创建以下目录：</p><pre class="language-text"><code># cd /etc/nginx/
+# mkdir cert
+</code></pre><p>然后使用<code>FileZilla</code>把下载下来的文件（一般是两个，一个<code>.pem</code>的，一个<code>.key</code>的）上传到新建的cert目录里。</p></li><li><p>再次编辑nginx配置文件<code>default.conf</code>：</p><pre class="language-text"><code># vim default.conf # 然后在文件的最前面添加以下内容，注意几个地方要根据你的情况填写
+server {
+        listen 443;
+        server_name www.yourdomain.com; #填写绑定证书的域名
+        ssl on;
+        ssl_certificate cert/your_file_name.pem;
+        ssl_certificate_key cert/your_file_name.key;
+        ssl_session_timeout 5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;#按照这个套件配置
+        ssl_prefer_server_ciphers on;
+        location / {
+            root   html; #站点目录
+            index  index.html index.htm;
+        }
+    }
+</code></pre><p>注意不是把原来的server{….}那一堆覆盖。</p><p>其中的<strong>server_name</strong>、<strong>root</strong>、<strong>index</strong>三项修改为和之前修改的一致。</p><p>然后在原来的server{…..}那一堆中的**location / {…}**的任意一行添加 <strong>rewrite ^(.*) https://$host$1 permanent;</strong> 强制http为https访问，开启全站https。（可选）</p></li></ol><h2 id="重启nginx"><a href="#重启nginx" aria-hidden="true" class="header-anchor">#</a> 重启nginx</h2><pre class="language-text"><code># systemctl restart nginx
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/blog/guide/" class="prev router-link-active">
+          小白的翻墙之路
+        </a></span><span class="next"><a href="/blog/devtools/vimfp.html">
+          Vim的分屏功能
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/4.1b6aa496.js" defer></script><script src="/assets/js/app.5aa3ec1f.js" defer></script>
+  </body>
+</html>
