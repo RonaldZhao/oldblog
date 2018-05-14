@@ -7,8 +7,8 @@
     <meta name="description" content="Stay hungary.Stay foolish. —— Steve Jobs">
     <link rel="icon" href="/logo.png">
     
-    <link rel="preload" href="/assets/css/19.styles.2aa3462f.css" as="style"><link rel="preload" href="/assets/js/app.c704377a.js" as="script"><link rel="preload" href="/assets/js/16.b2d1999e.js" as="script"><link rel="prefetch" href="/assets/js/3.7b442821.js"><link rel="prefetch" href="/assets/js/0.03bf8218.js"><link rel="prefetch" href="/assets/js/1.a2819162.js"><link rel="prefetch" href="/assets/js/2.4f331b76.js"><link rel="prefetch" href="/assets/js/4.19a1e6e4.js"><link rel="prefetch" href="/assets/js/5.1da3157f.js"><link rel="prefetch" href="/assets/js/6.2a6cccc7.js"><link rel="prefetch" href="/assets/js/7.0bef53aa.js"><link rel="prefetch" href="/assets/js/8.7e1fb8a2.js"><link rel="prefetch" href="/assets/js/9.55f08a3c.js"><link rel="prefetch" href="/assets/js/10.5934000c.js"><link rel="prefetch" href="/assets/js/11.7a98b9d4.js"><link rel="prefetch" href="/assets/js/12.0e5cf153.js"><link rel="prefetch" href="/assets/js/13.0adbd9b5.js"><link rel="prefetch" href="/assets/js/14.4231b7f2.js"><link rel="prefetch" href="/assets/js/15.3ed28ff2.js"><link rel="prefetch" href="/assets/js/17.c4ea4241.js"><link rel="prefetch" href="/assets/js/18.720c1bf2.js">
-    <link rel="stylesheet" href="/assets/css/19.styles.2aa3462f.css">
+    <link rel="preload" href="/assets/css/20.styles.6db917d5.css" as="style"><link rel="preload" href="/assets/js/app.617fe2b8.js" as="script"><link rel="preload" href="/assets/js/17.ac62c4c6.js" as="script"><link rel="prefetch" href="/assets/js/4.063f1ad2.js"><link rel="prefetch" href="/assets/js/0.4ee98838.js"><link rel="prefetch" href="/assets/js/1.92906389.js"><link rel="prefetch" href="/assets/js/2.80c2a9fc.js"><link rel="prefetch" href="/assets/js/3.6e7a07e3.js"><link rel="prefetch" href="/assets/js/5.12f3eb86.js"><link rel="prefetch" href="/assets/js/6.944259e7.js"><link rel="prefetch" href="/assets/js/7.bbcda08d.js"><link rel="prefetch" href="/assets/js/8.5263765d.js"><link rel="prefetch" href="/assets/js/9.f847f9ea.js"><link rel="prefetch" href="/assets/js/10.6052761b.js"><link rel="prefetch" href="/assets/js/11.92f863a1.js"><link rel="prefetch" href="/assets/js/12.8b83ee4c.js"><link rel="prefetch" href="/assets/js/13.b16e1d4f.js"><link rel="prefetch" href="/assets/js/14.153a1efb.js"><link rel="prefetch" href="/assets/js/15.46ffd570.js"><link rel="prefetch" href="/assets/js/16.157128aa.js"><link rel="prefetch" href="/assets/js/18.acdec4bd.js"><link rel="prefetch" href="/assets/js/19.d6ce4d83.js">
+    <link rel="stylesheet" href="/assets/css/20.styles.6db917d5.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
@@ -21,32 +21,32 @@
 <span class="token keyword">def</span> <span class="token function">quick_sort</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment"># 递归结束的条件</span>
     <span class="token keyword">if</span> left <span class="token operator">&gt;=</span> right<span class="token punctuation">:</span>
-        <span class="token keyword">return</span> lists
+        <span class="token keyword">return</span> nums
  
     <span class="token comment"># 选择第一个数作为基准数并记录在key中，方便最后写回</span>
-    key <span class="token operator">=</span> lists<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+    key <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
     lft <span class="token operator">=</span> left  
     rit <span class="token operator">=</span> right
  
     <span class="token comment"># 遍历整个当前数组</span>
     <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right<span class="token punctuation">:</span>
         <span class="token comment"># 从右侧开始筛选大于参考点的值，直到遇到</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right <span class="token operator">and</span> lists<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> key<span class="token punctuation">:</span>
+        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right <span class="token operator">and</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> key<span class="token punctuation">:</span>
             right <span class="token operator">-=</span> <span class="token number">1</span>
-        lists<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">=</span> lists<span class="token punctuation">[</span>right<span class="token punctuation">]</span>  <span class="token comment"># 这个位置的值先挪到左边</span>
+        nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span>  <span class="token comment"># 这个位置的值先挪到左边</span>
  
         <span class="token comment"># 从左边开始查找小于参考点的值</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right <span class="token operator">and</span> lists<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> key<span class="token punctuation">:</span>
+        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> right <span class="token operator">and</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> key<span class="token punctuation">:</span>
             left <span class="token operator">+=</span> <span class="token number">1</span>
-        lists<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> lists<span class="token punctuation">[</span>left<span class="token punctuation">]</span>  <span class="token comment"># 这个位置的值挪到右边</span>
+        nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>  <span class="token comment"># 这个位置的值挪到右边</span>
  
     <span class="token comment"># 写回改成的值</span>
-    lists<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">=</span> key
+    nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">=</span> key
  
     <span class="token comment"># 递归，并返回结果</span>
-    quick_sort<span class="token punctuation">(</span>lists<span class="token punctuation">,</span> low<span class="token punctuation">,</span> left <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>    <span class="token comment"># 递归左边部分</span>
-    quick_sort<span class="token punctuation">(</span>lists<span class="token punctuation">,</span> left <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> high<span class="token punctuation">)</span>   <span class="token comment"># 递归右边部分</span>
-    <span class="token keyword">return</span> lists
+    quick_sort<span class="token punctuation">(</span>nums<span class="token punctuation">,</span> low<span class="token punctuation">,</span> left <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>    <span class="token comment"># 递归左边部分</span>
+    quick_sort<span class="token punctuation">(</span>nums<span class="token punctuation">,</span> left <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> high<span class="token punctuation">)</span>   <span class="token comment"># 递归右边部分</span>
+    <span class="token keyword">return</span> nums
 
 <span class="token comment"># 测试程序</span>
 nums <span class="token operator">=</span> random<span class="token punctuation">.</span>sample<span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1000000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">500000</span><span class="token punctuation">)</span>  <span class="token comment"># 生成50万个100万范围内的无重复的随机数</span>
@@ -60,6 +60,6 @@ sorted_nums <span class="token operator">=</span> quick_sort<span class="token p
           小白的翻墙之路
         </a> →
       </span></p></div></div></div></div>
-    <script src="/assets/js/16.b2d1999e.js" defer></script><script src="/assets/js/app.c704377a.js" defer></script>
+    <script src="/assets/js/17.ac62c4c6.js" defer></script><script src="/assets/js/app.617fe2b8.js" defer></script>
   </body>
 </html>
