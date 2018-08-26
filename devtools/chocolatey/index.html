@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Win10 安装 Chocolatey 和 Vim | Ronald Zhao&#39;s Blog</title>
+    <meta name="description" content="Stay hungary. Stay foolish. —— Steve Jobs">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.d05eef06.css" as="style"><link rel="preload" href="/assets/js/app.d66817e5.js" as="script"><link rel="preload" href="/assets/js/10.13498c22.js" as="script"><link rel="prefetch" href="/assets/js/16.1fae64bc.js"><link rel="prefetch" href="/assets/js/2.cda51ec0.js"><link rel="prefetch" href="/assets/js/3.594dbaab.js"><link rel="prefetch" href="/assets/js/4.93dc01eb.js"><link rel="prefetch" href="/assets/js/5.de845ab4.js"><link rel="prefetch" href="/assets/js/6.3b644b27.js"><link rel="prefetch" href="/assets/js/7.5e617c78.js"><link rel="prefetch" href="/assets/js/8.4c63ab4c.js"><link rel="prefetch" href="/assets/js/9.ab0a257f.js"><link rel="prefetch" href="/assets/js/11.48c3f634.js"><link rel="prefetch" href="/assets/js/12.5f85273c.js"><link rel="prefetch" href="/assets/js/13.c78e7180.js"><link rel="prefetch" href="/assets/js/14.4fe85a28.js"><link rel="prefetch" href="/assets/js/15.1b676b9b.js"><link rel="prefetch" href="/assets/js/17.b8785dfe.js"><link rel="prefetch" href="/assets/js/18.a2fcfaee.js"><link rel="prefetch" href="/assets/js/19.6955a727.js"><link rel="prefetch" href="/assets/js/20.28e58926.js"><link rel="prefetch" href="/assets/js/21.082ab17d.js"><link rel="prefetch" href="/assets/js/22.a2f7eb53.js"><link rel="prefetch" href="/assets/js/23.cda24da2.js"><link rel="prefetch" href="/assets/js/24.44073542.js"><link rel="prefetch" href="/assets/js/25.28c06356.js"><link rel="prefetch" href="/assets/js/26.de3bbeef.js"><link rel="prefetch" href="/assets/js/27.1aafdddc.js"><link rel="prefetch" href="/assets/js/28.44319886.js"><link rel="prefetch" href="/assets/js/29.cef23746.js"><link rel="prefetch" href="/assets/js/30.78505d88.js"><link rel="prefetch" href="/assets/js/31.6649ea1a.js"><link rel="prefetch" href="/assets/js/32.ee9dae17.js"><link rel="prefetch" href="/assets/js/33.a38584d9.js"><link rel="prefetch" href="/assets/js/34.81809b32.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d05eef06.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Ronald Zhao's Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/python3/" class="nav-link">Python3</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">刷题</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lintcode/" class="nav-link">LintCode</a></li><li class="dropdown-item"><!----> <a href="/codewars/" class="nav-link">CodeWars</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">MySQL</a></li><li class="dropdown-item"><!----> <a href="/redis/" class="nav-link">Redis</a></li></ul></div></div><div class="nav-item"><a href="/algorithms/" class="nav-link">Algorithm</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/notes/" class="nav-link">Notes</a></div><div class="nav-item"><a href="/devtools/" class="nav-link router-link-active">Tools</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/love/" class="nav-link">💗</a></div> <a href="https://github.com/RonaldZhao/RonaldZhao.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/python3/" class="nav-link">Python3</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">刷题</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lintcode/" class="nav-link">LintCode</a></li><li class="dropdown-item"><!----> <a href="/codewars/" class="nav-link">CodeWars</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">MySQL</a></li><li class="dropdown-item"><!----> <a href="/redis/" class="nav-link">Redis</a></li></ul></div></div><div class="nav-item"><a href="/algorithms/" class="nav-link">Algorithm</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/notes/" class="nav-link">Notes</a></div><div class="nav-item"><a href="/devtools/" class="nav-link router-link-active">Tools</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/love/" class="nav-link">💗</a></div> <a href="https://github.com/RonaldZhao/RonaldZhao.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Win10 安装 Chocolatey 和 Vim</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/devtools/chocolatey/#说明" class="sidebar-link">说明</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/devtools/chocolatey/#安装chocolatey" class="sidebar-link">安装Chocolatey</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/devtools/chocolatey/#安装vim" class="sidebar-link">安装Vim</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/devtools/chocolatey/#验证" class="sidebar-link">验证</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="win10-安装-chocolatey-和-vim"><a href="#win10-安装-chocolatey-和-vim" aria-hidden="true" class="header-anchor">#</a> Win10 安装 Chocolatey 和 Vim</h1> <blockquote><p>参考: <a href="https://chocolatey.org/install#install-with-powershellexe" target="_blank" rel="noopener noreferrer">Installing Chocolatey<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h2 id="说明"><a href="#说明" aria-hidden="true" class="header-anchor">#</a> 说明</h2> <div class="tip custom-block"><p class="custom-block-title">安装环境</p> <p>OS: windows 10 专业版 1803(OS Build 17134.228)
+终端: PowerShell 2.0(在<code>控制面板-&gt;程序-&gt;启用或关闭xxx</code>中开启)</p></div> <div class="warning custom-block"><p class="custom-block-title">注意</p> <p>请使用管理员权限打开PowerShell</p></div> <h2 id="安装chocolatey"><a href="#安装chocolatey" aria-hidden="true" class="header-anchor">#</a> 安装Chocolatey</h2> <ol><li><p>打开<code>PowerShell</code>后请先执行<code>Get-ExecutionPolicy</code>确保返回的不是<code>Restricted</code>, 如果是请执行<code>Set-ExecutionPolicy AllSigned</code>或<code>Set-ExecutionPolicy Bypass -Scope Process</code>.</p></li> <li><p>拷贝如下命令并执行:</p></li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PS C:\Windows\system32<span class="token operator">&gt;</span> Set-ExecutionPolicy Bypass -Scope Process -Force<span class="token punctuation">;</span> iex <span class="token punctuation">((</span>New-Object System.Net.WebClient<span class="token punctuation">)</span>.DownloadString<span class="token punctuation">(</span><span class="token string">'https://chocolatey.org/install.ps1'</span><span class="token punctuation">))</span>
+Getting latest version of the Chocolatey package <span class="token keyword">for</span> download.
+Getting Chocolatey from https://chocolatey.org/api/v2/package/chocolatey/0.10.11.
+Downloading 7-Zip commandline tool prior to extraction.
+Extracting C:\Users\xxx\AppData\Local\Temp\chocolatey\chocInstall\chocolatey.zip to C:\Users\zzgda\AppData\Local\Temp\chocolatey\chocInstall<span class="token punctuation">..</span>.
+Installing chocolatey on this machine
+Creating ChocolateyInstall as an environment variable <span class="token punctuation">(</span>targeting <span class="token string">'Machine'</span><span class="token punctuation">)</span>
+  Setting ChocolateyInstall to <span class="token string">'C:\ProgramData\chocolatey'</span>
+WARNING: It<span class="token string">'s very likely you will need to close and reopen your shell
+  before you can use choco.
+Restricting write permissions to Administrators
+We are setting up the Chocolatey package repository.
+The packages themselves go to '</span>C:\ProgramData\chocolatey\lib<span class="token string">'
+  (i.e. C:\ProgramData\chocolatey\lib\yourPackageName).
+A shim file for the command line goes to '</span>C:\ProgramData\chocolatey\bin<span class="token string">'
+  and points to an executable in '</span>C:\ProgramData\chocolatey\lib\yourPackageName<span class="token string">'.
+
+Creating Chocolatey folders if they do not already exist.
+
+WARNING: You can safely ignore errors related to missing log files when
+  upgrading from a version of Chocolatey less than 0.9.9.
+  '</span>Batch <span class="token function">file</span> could not be found<span class="token string">' is also safe to ignore.
+  '</span>The system cannot <span class="token function">find</span> the <span class="token function">file</span> specified<span class="token string">' - also safe.
+chocolatey.nupkg file not installed in lib.
+ Attempting to locate it from bootstrapper.
+PATH environment variable does not have C:\ProgramData\chocolatey\bin in it. Adding...
+WARNING: Not setting tab completion: Profile file does not exist at '</span>C:\Users\xxx\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1<span class="token string">'.
+Chocolatey (choco.exe) is now ready.
+You can call choco from anywhere, command line or powershell by typing choco.
+Run choco /? for a list of functions.
+You may need to shut down and restart powershell and/or consoles
+ first prior to using choco.
+Ensuring chocolatey commands are on the path
+Ensuring chocolatey.nupkg is in the lib folder
+PS C:\Windows\system32&gt; choco
+Chocolatey v0.10.11
+Please run '</span>choco -?<span class="token string">' or '</span>choco <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> -?' <span class="token keyword">for</span> <span class="token function">help</span> menu.
+PS C:\Windows\system32<span class="token operator">&gt;</span> <span class="token comment"># 输出如上则说明安装成功</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h2 id="安装vim"><a href="#安装vim" aria-hidden="true" class="header-anchor">#</a> 安装Vim</h2> <blockquote><p>当提示输入的时候输入<code>Y</code>然后回车即可.</p></blockquote> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PS C:\Windows\system32<span class="token operator">&gt;</span> choco <span class="token function">install</span> vim
+Chocolatey v0.10.11
+Installing the following packages:
+vim
+By installing you accept licenses <span class="token keyword">for</span> the packages.
+Progress: Downloading vim 8.0.604<span class="token punctuation">..</span>. 100%
+
+vim v8.0.604 <span class="token punctuation">[</span>Approved<span class="token punctuation">]</span>
+vim package files <span class="token function">install</span> completed. Performing other installation steps.
+The package vim wants to run <span class="token string">'chocolateyInstall.ps1'</span><span class="token keyword">.</span>
+Note: If you don<span class="token string">'t run this script, the installation will fail.
+Note: To confirm automatically next time, use '</span>-y<span class="token string">' or consider:
+choco feature enable -n allowGlobalConfirmation
+Do you want to run the script?([Y]es/[N]o/[P]rint): Y
+
+Downloading vim
+  from '</span>https://sourceforge.net/projects/cream/files/Vim/8.0.604/gvim-8-0-604.exe/download<span class="token string">'
+Progress: 100% - Completed download of C:\Users\xxx\AppData\Local\Temp\chocolatey\vim\8.0.604\vimInstall.exe (9.22 MB).
+Download of vimInstall.exe (9.22 MB) completed.
+Installing vim...
+vim has been installed.
+Adding the vim installation directory to PATH …
+PATH environment variable does not have C:\Program Files (x86)\vim\vim80 in it. Adding...
+  vim may be able to be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type <span class="token variable"><span class="token variable">`</span>refreshenv<span class="token variable">`</span></span>).
+ The install of vim was successful.
+  Software installed as '</span>exe', <span class="token function">install</span> location is likely default.
+
+Chocolatey installed 1/1 packages.
+ See the log <span class="token keyword">for</span> details <span class="token punctuation">(</span>C:\ProgramData\chocolatey\logs\chocolatey.log<span class="token punctuation">)</span>.
+PS C:\Windows\system32<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>安装完毕后需要重新启动<code>PowerShell</code>.</p> <h2 id="验证"><a href="#验证" aria-hidden="true" class="header-anchor">#</a> 验证</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PS C:\Windows\system32<span class="token operator">&gt;</span> choco list --localonly
+Chocolatey v0.10.11
+chocolatey 0.10.11
+vim 8.0.604
+2 packages installed.
+PS C:\Windows\system32<span class="token operator">&gt;</span> vim --version
+<span class="token comment"># 这里会输出一大堆版本相关信息, 但是不重要, 有就OK</span>
+PS C:\Windows\system32<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>Done!, Have fun.</strong></p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2018-8-26 14:33:45</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/10.13498c22.js" defer></script><script src="/assets/js/app.d66817e5.js" defer></script>
+  </body>
+</html>
